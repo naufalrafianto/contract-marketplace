@@ -1,0 +1,26 @@
+{
+  "sepolia": {
+    "network": "sepolia",
+    "averageBlockTime": 12,
+    "minBlockTime": 12,
+    "maxBlockTime": 12,
+    "averageTransactionsPerBlock": 343.1,
+    "totalBlocks": 10,
+    "averageGasPrice": 0,
+    "connectionErrors": 0,
+    "reliability": "100.00"
+  },
+  "cardona": {
+    "network": "cardona",
+    "averageBlockTime": 3.25,
+    "minBlockTime": 3,
+    "maxBlockTime": 6,
+    "averageTransactionsPerBlock": 0.05555555555555555,
+    "totalBlocks": 36,
+    "averageGasPrice": 0,
+    "connectionErrors": 0,
+    "reliability": "100.00"
+  },
+  "testDuration": 120000,
+  "timestamp": "2025-07-07T10:47:27.825Z"
+}

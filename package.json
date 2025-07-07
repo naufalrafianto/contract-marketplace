@@ -1,0 +1,27 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "chai": "^4.5.0",
+    "ethers": "^6.14.4",
+    "hardhat": "^2.25.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.3.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.5.0",
+    "node-cron": "^4.2.0"
+  },
+  "scripts": {
+    "deploy": "node scripts/deploy-contracts.js",
+    "test:run": "node scripts/run-test.js",
+    "test:stress": "npx hardhat test tests/stress.test.js",
+    "test:network": "npx hardhat test tests/network.test.js",
+    "test:load": "npx hardhat test tests/load.test.js",
+    "monitor:realtime": "node scripts/monitor.js",
+    "report:benchmark": "node scripts/benchmark.js",
+    "scheduler:start": "node scripts/test-scheduler.js",
+    "test:sepolia": "npx hardhat test --network sepolia",
+    "test:cardona": "npx hardhat test --network cardona"
+  }
+}

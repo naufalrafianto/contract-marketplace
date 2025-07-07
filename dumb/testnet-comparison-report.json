@@ -1,0 +1,760 @@
+{
+  "timestamp": "2025-07-06T21:17:27.082Z",
+  "networks": {
+    "sepolia": {
+      "name": "Sepolia",
+      "chainId": 11155111,
+      "metrics": {
+        "deployment": {
+          "cost": 0.102296,
+          "time": 5099,
+          "gasUsed": 5114800
+        },
+        "events": {
+          "averageCost": 0.004365468,
+          "averageTime": 14726.4,
+          "averageGasUsed": 218273.4,
+          "successRate": "100.00"
+        },
+        "tickets": {
+          "averageCost": 0.0062289120000000005,
+          "averageTime": 14823.2,
+          "averageGasUsed": 311445.6,
+          "successRate": "100.00"
+        },
+        "performance": {
+          "duration": 37519,
+          "totalOperations": 3,
+          "successCount": 2,
+          "failureCount": 1,
+          "successRate": "66.67",
+          "averageGasUsed": "215043",
+          "averageTime": 12506,
+          "throughput": "0.08",
+          "operations": [
+            {
+              "type": "unknown",
+              "error": "transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"to\": \"0x35b490a7d3CB5EddF01037163F5B641be3546B2D\" }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0xc8eafa66826c3724c7e534cd62cb2f17cfd8045412f25fba1338f44ead08324a\", \"blockNumber\": 8707430, \"contractAddress\": null, \"cumulativeGasUsed\": \"367679\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"gasPrice\": \"20000000000\", \"gasUsed\": \"250000\", \"hash\": \"0xaa334b1686ce48f92dcf8921f8bd029b5cdffaeedcda1fb6cbd9696cd2f1a11d\", \"index\": 5, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": \"0x35b490a7d3CB5EddF01037163F5B641be3546B2D\" }, code=CALL_EXCEPTION, version=6.15.0)",
+              "time": 14062,
+              "success": false
+            },
+            {
+              "type": "createEvent",
+              "gasUsed": "215055",
+              "time": 11939,
+              "success": true
+            },
+            {
+              "type": "createEvent",
+              "gasUsed": "215031",
+              "time": 11517,
+              "success": true
+            }
+          ]
+        }
+      }
+    },
+    "cardona": {
+      "name": "Cardona Polygon zkEVM",
+      "chainId": 2442,
+      "metrics": {
+        "deployment": {
+          "cost": 0.005113278,
+          "time": 2771,
+          "gasUsed": 5113278
+        },
+        "events": {
+          "averageCost": 0.00021827340000000003,
+          "averageTime": 9660.2,
+          "averageGasUsed": 218273.4,
+          "successRate": "100.00"
+        },
+        "tickets": {
+          "averageCost": 0.0003114456000000001,
+          "averageTime": 13122,
+          "averageGasUsed": 311445.6,
+          "successRate": "100.00"
+        },
+        "performance": {
+          "duration": 36731,
+          "totalOperations": 3,
+          "successCount": 1,
+          "failureCount": 2,
+          "successRate": "33.33",
+          "averageGasUsed": "215043",
+          "averageTime": 12243.666666666666,
+          "throughput": "0.08",
+          "operations": [
+            {
+              "type": "unknown",
+              "error": "transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0x649b58d14e9baef60f14f065d5434a6e227eb016ee754d0f7d4ee8bad84b2bc6\", \"blockNumber\": 14552321, \"contractAddress\": null, \"cumulativeGasUsed\": \"250000\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"gasPrice\": \"1000000000\", \"gasUsed\": \"250000\", \"hash\": \"0x55f50aed7b2919c0c31b8ef5b85190378182eae7d756af0308d248a027573aec\", \"index\": 0, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, code=CALL_EXCEPTION, version=6.15.0)",
+              "time": 11419,
+              "success": false
+            },
+            {
+              "type": "createEvent",
+              "gasUsed": "215043",
+              "time": 11141,
+              "success": true
+            },
+            {
+              "type": "unknown",
+              "error": "transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0x10e13ce61db170c88b2667fcecc09827997c854934bb0bf72dbae61da0486684\", \"blockNumber\": 14552328, \"contractAddress\": null, \"cumulativeGasUsed\": \"250000\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"gasPrice\": \"1000000000\", \"gasUsed\": \"250000\", \"hash\": \"0x9aea16515e4dd6b998e0fc39ea89d2e45dca2c2879209d2f8e39ed9e3e55a2d3\", \"index\": 0, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, code=CALL_EXCEPTION, version=6.15.0)",
+              "time": 14171,
+              "success": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "comparison": {
+    "deployment": {
+      "costReduction": "95.00",
+      "timeImprovement": "45.66"
+    },
+    "events": {
+      "costReduction": "95.00",
+      "timeImprovement": "34.40"
+    },
+    "tickets": {
+      "costReduction": "95.00",
+      "timeImprovement": "11.48"
+    },
+    "performance": {
+      "throughputImprovement": "0.00"
+    }
+  },
+  "rawData": {
+    "sepolia": {
+      "deployment": {
+        "address": "0x35b490a7d3CB5EddF01037163F5B641be3546B2D",
+        "gasUsed": "5114800",
+        "gasPrice": "20000000000",
+        "cost": "0.102296",
+        "time": 5099,
+        "blockNumber": 8707398,
+        "transactionHash": "0xae4bc8dd76928928a486e1457ae478bf35f8997be77c3856330475cbb03c93d5"
+      },
+      "events": [
+        {
+          "eventId": 1,
+          "name": "Concert A",
+          "gasUsed": "231927",
+          "gasPrice": "20000000000",
+          "cost": "0.00463854",
+          "time": 13843,
+          "blockNumber": 8707399,
+          "transactionHash": "0xa6fdcb089477c4564b8ffe82d48ecf070401f8dfd35a9e4ff5fe2536865f88c0"
+        },
+        {
+          "eventId": 2,
+          "name": "Conference B",
+          "gasUsed": "214887",
+          "gasPrice": "20000000000",
+          "cost": "0.00429774",
+          "time": 8261,
+          "blockNumber": 8707400,
+          "transactionHash": "0xc9a660eff0ad1131a8b93035466df044604f63ff9b35f3a5dfa8d825beb94859"
+        },
+        {
+          "eventId": 3,
+          "name": "Festival C",
+          "gasUsed": "214863",
+          "gasPrice": "20000000000",
+          "cost": "0.00429726",
+          "time": 25647,
+          "blockNumber": 8707402,
+          "transactionHash": "0xb95b42572269a97a27d02db55a2c29a767384c01c91de26a2cdfb835227de03f"
+        },
+        {
+          "eventId": 4,
+          "name": "Workshop D",
+          "gasUsed": "214815",
+          "gasPrice": "20000000000",
+          "cost": "0.0042963",
+          "time": 11689,
+          "blockNumber": 8707403,
+          "transactionHash": "0xb6010c4d83e2d1c6593de1742550a3730091083e022699b5ac44bb2847ac914d"
+        },
+        {
+          "eventId": 5,
+          "name": "Seminar E",
+          "gasUsed": "214875",
+          "gasPrice": "20000000000",
+          "cost": "0.0042975",
+          "time": 14192,
+          "blockNumber": 8707404,
+          "transactionHash": "0x356c3a86913872039350e75425850e07f9edfecd1ef76f9cb60bfc43e9b6df70"
+        }
+      ],
+      "tickets": [
+        {
+          "ticketId": 1,
+          "eventId": 1,
+          "gasUsed": "392664",
+          "gasPrice": "20000000000",
+          "cost": "0.00785328",
+          "totalCost": "0.10785328",
+          "time": 11513,
+          "blockNumber": 8707405,
+          "transactionHash": "0xdd124d6bb967c65f4362c71776da704c749bb3c2bc2007ffe30c26ca73a3fdb7"
+        },
+        {
+          "ticketId": 2,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 11825,
+          "blockNumber": 8707406,
+          "transactionHash": "0xf1f0f8f542bac137400a8d66bd5020ed8c7ddacfe685d6feb93f7bca752520d6"
+        },
+        {
+          "ticketId": 3,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 9499,
+          "blockNumber": 8707407,
+          "transactionHash": "0xd3af8f76097bf688b2cf49fe845c7045478a20e37878ea55964d6774b75d811b"
+        },
+        {
+          "ticketId": 4,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 13067,
+          "blockNumber": 8707408,
+          "transactionHash": "0x9e5ef32160770db027ecb61a5429a3e153855e0f8d0d26ddca5d40a98974237c"
+        },
+        {
+          "ticketId": 5,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 14858,
+          "blockNumber": 8707409,
+          "transactionHash": "0x226cb1322a2763e3b78ac8c28e68e735caf9dd00fdf54dfe1fe8ea40adb44627"
+        },
+        {
+          "ticketId": 6,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 8691,
+          "blockNumber": 8707410,
+          "transactionHash": "0x90813becd53c8c598e24ec95ed4e04361f6650bbefeebd04b8ace960fe177f19"
+        },
+        {
+          "ticketId": 7,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 23727,
+          "blockNumber": 8707412,
+          "transactionHash": "0x70db4034ecb175bc82f363570ac9faba675a6a9600e102a4df30c23e9f9b70ca"
+        },
+        {
+          "ticketId": 8,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 12446,
+          "blockNumber": 8707413,
+          "transactionHash": "0x9d40dfaa5241854014ac7fd27c3b486ebcf5da5579207f2cec2e9cd1d6e13641"
+        },
+        {
+          "ticketId": 9,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "20000000000",
+          "cost": "0.00614328",
+          "totalCost": "0.10614328",
+          "time": 14720,
+          "blockNumber": 8707414,
+          "transactionHash": "0x660157d441b4ceeab87a972e8c5eb53c761f715b4e1d5bee53a91ba44e529086"
+        },
+        {
+          "ticketId": 10,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 9833,
+          "blockNumber": 8707415,
+          "transactionHash": "0xf706f9dad2f779096ec63851e4f451290757de3269a99f0082c95c69086ca044"
+        },
+        {
+          "ticketId": 11,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 25404,
+          "blockNumber": 8707417,
+          "transactionHash": "0x7fb9093b118082bafd9aaed624d5bd755c1b7ce1723451d4396665cbd6d32488"
+        },
+        {
+          "ticketId": 12,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 13201,
+          "blockNumber": 8707418,
+          "transactionHash": "0x01671556ee2fb23028304f4712448883c12dd45cba7385537cc4678ad8feccb3"
+        },
+        {
+          "ticketId": 13,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 21967,
+          "blockNumber": 8707420,
+          "transactionHash": "0xc210a3088e8d5bfd1d117e0f1b6457ee6d2e59906a114233a58d026dddee7982"
+        },
+        {
+          "ticketId": 14,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 10960,
+          "blockNumber": 8707421,
+          "transactionHash": "0xaab39ab25573c7488cdd110a4795ca4820a666241eae21c44894d3fad78ec04f"
+        },
+        {
+          "ticketId": 15,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 15113,
+          "blockNumber": 8707422,
+          "transactionHash": "0x6120e8fc03d2613993605e6e5696d75789195f1e3d7fdde1dcde029f526dfa7e"
+        },
+        {
+          "ticketId": 16,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 21686,
+          "blockNumber": 8707424,
+          "transactionHash": "0x7ee05e47057baece0edd6bf04029f4780453d1fe6d6d049fbb440acb546e335c"
+        },
+        {
+          "ticketId": 17,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 12948,
+          "blockNumber": 8707425,
+          "transactionHash": "0xfc1612b13068762389de6b77417b23d647995627aab77adb2c17013d1b412a3a"
+        },
+        {
+          "ticketId": 18,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 10847,
+          "blockNumber": 8707426,
+          "transactionHash": "0xe8727be19f1f3e6be7405e36fe4eca502d25af60241fe5b77c5adb799e2ce347"
+        },
+        {
+          "ticketId": 19,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 15624,
+          "blockNumber": 8707427,
+          "transactionHash": "0x577d1f5816b1ddd1157b2a2746d6fc856867e58a12e9bf1ae62f62192d15c7d1"
+        },
+        {
+          "ticketId": 20,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "20000000000",
+          "cost": "0.00614352",
+          "totalCost": "0.10614352",
+          "time": 18535,
+          "blockNumber": 8707429,
+          "transactionHash": "0x399e2a6b82676b8e33828657fc35bd294b95a17c369840a3973ba8e087ba3f3d"
+        }
+      ],
+      "performance": {
+        "duration": 37519,
+        "totalOperations": 3,
+        "successCount": 2,
+        "failureCount": 1,
+        "successRate": "66.67",
+        "averageGasUsed": "215043",
+        "averageTime": 12506,
+        "throughput": "0.08",
+        "operations": [
+          {
+            "type": "unknown",
+            "error": "transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"to\": \"0x35b490a7d3CB5EddF01037163F5B641be3546B2D\" }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0xc8eafa66826c3724c7e534cd62cb2f17cfd8045412f25fba1338f44ead08324a\", \"blockNumber\": 8707430, \"contractAddress\": null, \"cumulativeGasUsed\": \"367679\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"gasPrice\": \"20000000000\", \"gasUsed\": \"250000\", \"hash\": \"0xaa334b1686ce48f92dcf8921f8bd029b5cdffaeedcda1fb6cbd9696cd2f1a11d\", \"index\": 5, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": \"0x35b490a7d3CB5EddF01037163F5B641be3546B2D\" }, code=CALL_EXCEPTION, version=6.15.0)",
+            "time": 14062,
+            "success": false
+          },
+          {
+            "type": "createEvent",
+            "gasUsed": "215055",
+            "time": 11939,
+            "success": true
+          },
+          {
+            "type": "createEvent",
+            "gasUsed": "215031",
+            "time": 11517,
+            "success": true
+          }
+        ]
+      }
+    },
+    "cardona": {
+      "deployment": {
+        "address": "0xCf94429470E409120Ac314367AD760Bfe0E33C91",
+        "gasUsed": "5113278",
+        "gasPrice": "1000000000",
+        "cost": "0.005113278",
+        "time": 2771,
+        "blockNumber": 14552224,
+        "transactionHash": "0xba6a3c2f475ae0ca0e591c376a9e6b59c0e348cdb6834494fac6fcb80747f924"
+      },
+      "events": [
+        {
+          "eventId": 1,
+          "name": "Concert A",
+          "gasUsed": "231927",
+          "gasPrice": "1000000000",
+          "cost": "0.000231927",
+          "time": 7391,
+          "blockNumber": 14552227,
+          "transactionHash": "0xe1f23070e55ae0be0c30c7fb3aedf5c21fc7c30a6502a27fc4d91640e362d2cb"
+        },
+        {
+          "eventId": 2,
+          "name": "Conference B",
+          "gasUsed": "214887",
+          "gasPrice": "1000000000",
+          "cost": "0.000214887",
+          "time": 8224,
+          "blockNumber": 14552229,
+          "transactionHash": "0x4825e4c5c734d93814db02eedc2d291cdc734da27afcfd1e8513f95408079d31"
+        },
+        {
+          "eventId": 3,
+          "name": "Festival C",
+          "gasUsed": "214863",
+          "gasPrice": "1000000000",
+          "cost": "0.000214863",
+          "time": 11428,
+          "blockNumber": 14552232,
+          "transactionHash": "0xb2c078a1faddf8cfd3313de7109659b30484180003cae7fac34cf31e743abcf5"
+        },
+        {
+          "eventId": 4,
+          "name": "Workshop D",
+          "gasUsed": "214815",
+          "gasPrice": "1000000000",
+          "cost": "0.000214815",
+          "time": 7112,
+          "blockNumber": 14552235,
+          "transactionHash": "0x5ece31fc743b7665113dd3a39f2f435af541ce31e86711877d64f8615f231e42"
+        },
+        {
+          "eventId": 5,
+          "name": "Seminar E",
+          "gasUsed": "214875",
+          "gasPrice": "1000000000",
+          "cost": "0.000214875",
+          "time": 14146,
+          "blockNumber": 14552238,
+          "transactionHash": "0x4c2f0b5dddc560fd2ec24055d55567b86b5fbf70291c127a1cbfef296980eccd"
+        }
+      ],
+      "tickets": [
+        {
+          "ticketId": 1,
+          "eventId": 1,
+          "gasUsed": "392664",
+          "gasPrice": "1000000000",
+          "cost": "0.000392664",
+          "totalCost": "0.100392664",
+          "time": 11462,
+          "blockNumber": 14552242,
+          "transactionHash": "0x1d31f83d56e6e2b980506c9985d325301721b41ec454d277d590e987cbce6edd"
+        },
+        {
+          "ticketId": 2,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 7168,
+          "blockNumber": 14552245,
+          "transactionHash": "0x9de7a212ef9507d7784c27c46108b97be604a8db5780781152eda1f99d930b4a"
+        },
+        {
+          "ticketId": 3,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 14150,
+          "blockNumber": 14552248,
+          "transactionHash": "0xe20ab406fcfbddd3456d664ffbad65682c53e7b81a4a53cda13a357af57a477d"
+        },
+        {
+          "ticketId": 4,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 11472,
+          "blockNumber": 14552252,
+          "transactionHash": "0x92cbc77e8fd2e95bd78dac40d7839bd7f88872c8f6270eb4a158f7d35b8ea8cb"
+        },
+        {
+          "ticketId": 5,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 11470,
+          "blockNumber": 14552256,
+          "transactionHash": "0x360873e711393ae3ec35746c969446c613f405379b6214597ad5040ba16124a9"
+        },
+        {
+          "ticketId": 6,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 14285,
+          "blockNumber": 14552259,
+          "transactionHash": "0x77149dbb8eebbf61de28c09590a29e0b40321b0164ed472a3f9573692362ee6b"
+        },
+        {
+          "ticketId": 7,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 11504,
+          "blockNumber": 14552262,
+          "transactionHash": "0x0fd12bb5dc7f260d569edde18c94181a6c0c6e9dfaadc2da4d8bd69b07b73fa7"
+        },
+        {
+          "ticketId": 8,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 11494,
+          "blockNumber": 14552266,
+          "transactionHash": "0xf833b9bf699da697b072f84afca64625d91f7d0164d7a4b0c31047f7b8dab6ea"
+        },
+        {
+          "ticketId": 9,
+          "eventId": 1,
+          "gasUsed": "307164",
+          "gasPrice": "1000000000",
+          "cost": "0.000307164",
+          "totalCost": "0.100307164",
+          "time": 18563,
+          "blockNumber": 14552270,
+          "transactionHash": "0x3250135d704724163e7dd46f5f890373d008b3466f3a627ec84571aeac0ab087"
+        },
+        {
+          "ticketId": 10,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 16899,
+          "blockNumber": 14552275,
+          "transactionHash": "0x824c6b3ed4352ee6e7be957e066efc8c35b78421ea0093db18743c3d691cd1c2"
+        },
+        {
+          "ticketId": 11,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 11407,
+          "blockNumber": 14552280,
+          "transactionHash": "0xcdefeb66d34b92e43fae4f0ea3cf73808fc9b16c7042c61408db412327c61698"
+        },
+        {
+          "ticketId": 12,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 15764,
+          "blockNumber": 14552284,
+          "transactionHash": "0x1b8e0890c22a5aeab788cabd68fd50f0781846200fcf1e10bcb715171114c7bb"
+        },
+        {
+          "ticketId": 13,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 14222,
+          "blockNumber": 14552288,
+          "transactionHash": "0xa194fa42cadb74b68453fca5c28fd2e1813dcf4fd9d1849de3ecaf7644e721a6"
+        },
+        {
+          "ticketId": 14,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 11419,
+          "blockNumber": 14552292,
+          "transactionHash": "0xae3aa6ed0d99ab5c5af1ec1f21de1f1520b8e507bf2a51142185559c6593038a"
+        },
+        {
+          "ticketId": 15,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 14156,
+          "blockNumber": 14552296,
+          "transactionHash": "0x459b619d4db6029cf5a9fcbfbabb8a3917a4b1c3d3acbb8e27aebc30f2cee2ab"
+        },
+        {
+          "ticketId": 16,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 11469,
+          "blockNumber": 14552300,
+          "transactionHash": "0x78c6055c3338dbe252f6a3a7248d8ba9acca030d9c170afc2e6724bfd8e8e837"
+        },
+        {
+          "ticketId": 17,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 11421,
+          "blockNumber": 14552304,
+          "transactionHash": "0x6183cc06fadb0127adeddaacc16fa7c34fbc178ae51a865a051a1b63f685e26d"
+        },
+        {
+          "ticketId": 18,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 14184,
+          "blockNumber": 14552308,
+          "transactionHash": "0xe30b980f590ea7794a12a0d5a4c068047f2726b00235fbe6f30d514158bc61e0"
+        },
+        {
+          "ticketId": 19,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 15798,
+          "blockNumber": 14552312,
+          "transactionHash": "0x326450c505683fd211748647702ce063c5e5cebba822392e0c18b4c853d9f6d6"
+        },
+        {
+          "ticketId": 20,
+          "eventId": 1,
+          "gasUsed": "307176",
+          "gasPrice": "1000000000",
+          "cost": "0.000307176",
+          "totalCost": "0.100307176",
+          "time": 14133,
+          "blockNumber": 14552317,
+          "transactionHash": "0x3164adda7b9f919380b88a4c78a463faf0832eb6011ae5e1c6e9044ebb0c2040"
+        }
+      ],
+      "performance": {
+        "duration": 36731,
+        "totalOperations": 3,
+        "successCount": 1,
+        "failureCount": 2,
+        "successRate": "33.33",
+        "averageGasUsed": "215043",
+        "averageTime": 12243.666666666666,
+        "throughput": "0.08",
+        "operations": [
+          {
+            "type": "unknown",
+            "error": "transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0x649b58d14e9baef60f14f065d5434a6e227eb016ee754d0f7d4ee8bad84b2bc6\", \"blockNumber\": 14552321, \"contractAddress\": null, \"cumulativeGasUsed\": \"250000\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"gasPrice\": \"1000000000\", \"gasUsed\": \"250000\", \"hash\": \"0x55f50aed7b2919c0c31b8ef5b85190378182eae7d756af0308d248a027573aec\", \"index\": 0, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, code=CALL_EXCEPTION, version=6.15.0)",
+            "time": 11419,
+            "success": false
+          },
+          {
+            "type": "createEvent",
+            "gasUsed": "215043",
+            "time": 11141,
+            "success": true
+          },
+          {
+            "type": "unknown",
+            "error": "transaction execution reverted (action=\"sendTransaction\", data=null, reason=null, invocation=null, revert=null, transaction={ \"data\": \"\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, receipt={ \"_type\": \"TransactionReceipt\", \"blobGasPrice\": null, \"blobGasUsed\": null, \"blockHash\": \"0x10e13ce61db170c88b2667fcecc09827997c854934bb0bf72dbae61da0486684\", \"blockNumber\": 14552328, \"contractAddress\": null, \"cumulativeGasUsed\": \"250000\", \"from\": \"0x3B83ad6FBD3415e105b4dcEb080cFd9aDD6b5250\", \"gasPrice\": \"1000000000\", \"gasUsed\": \"250000\", \"hash\": \"0x9aea16515e4dd6b998e0fc39ea89d2e45dca2c2879209d2f8e39ed9e3e55a2d3\", \"index\": 0, \"logs\": [  ], \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\", \"root\": null, \"status\": 0, \"to\": \"0xCf94429470E409120Ac314367AD760Bfe0E33C91\" }, code=CALL_EXCEPTION, version=6.15.0)",
+            "time": 14171,
+            "success": false
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "timestamp": "2025-07-07T04:42:53.875Z",
+  "scenarios": {
+    "small": {
+      "events": 10,
+      "tickets": 100
+    },
+    "medium": {
+      "events": 50,
+      "tickets": 1000
+    },
+    "large": {
+      "events": 200,
+      "tickets": 10000
+    },
+    "enterprise": {
+      "events": 1000,
+      "tickets": 100000
+    }
+  },
+  "gasCosts": {
+    "deployment": {
+      "sepolia": 2500000,
+      "cardona": 2500000
+    },
+    "createEvent": {
+      "sepolia": 150000,
+      "cardona": 150000
+    },
+    "purchaseTicket": {
+      "sepolia": 200000,
+      "cardona": 200000
+    }
+  },
+  "gasPrices": {
+    "sepolia": "20.0 gwei",
+    "cardona": "1.0 gwei"
+  },
+  "results": {
+    "small": {
+      "sepolia": {
+        "deployment": "0.05",
+        "events": "0.03",
+        "tickets": "0.4",
+        "total": "0.48",
+        "totalWei": "480000000000000000"
+      },
+      "cardona": {
+        "deployment": "0.0025",
+        "events": "0.0015",
+        "tickets": "0.02",
+        "total": "0.024",
+        "totalWei": "24000000000000000"
+      },
+      "savings": {
+        "absolute": "0.456000 ETH",
+        "percentage": "95.0%"
+      }
+    },
+    "medium": {
+      "sepolia": {
+        "deployment": "0.05",
+        "events": "0.15",
+        "tickets": "4.0",
+        "total": "4.2",
+        "totalWei": "4200000000000000000"
+      },
+      "cardona": {
+        "deployment": "0.0025",
+        "events": "0.0075",
+        "tickets": "0.2",
+        "total": "0.21",
+        "totalWei": "210000000000000000"
+      },
+      "savings": {
+        "absolute": "3.990000 ETH",
+        "percentage": "95.0%"
+      }
+    },
+    "large": {
+      "sepolia": {
+        "deployment": "0.05",
+        "events": "0.6",
+        "tickets": "40.0",
+        "total": "40.65",
+        "totalWei": "40650000000000000000"
+      },
+      "cardona": {
+        "deployment": "0.0025",
+        "events": "0.03",
+        "tickets": "2.0",
+        "total": "2.0325",
+        "totalWei": "2032500000000000000"
+      },
+      "savings": {
+        "absolute": "38.617500 ETH",
+        "percentage": "95.0%"
+      }
+    },
+    "enterprise": {
+      "sepolia": {
+        "deployment": "0.05",
+        "events": "3.0",
+        "tickets": "400.0",
+        "total": "403.05",
+        "totalWei": "403050000000000000000"
+      },
+      "cardona": {
+        "deployment": "0.0025",
+        "events": "0.15",
+        "tickets": "20.0",
+        "total": "20.1525",
+        "totalWei": "20152500000000000000"
+      },
+      "savings": {
+        "absolute": "382.897500 ETH",
+        "percentage": "95.0%"
+      }
+    }
+  },
+  "summary": {
+    "averageSavings": 95,
+    "totalSavingsRange": {
+      "min": 0.456,
+      "max": 382.8975
+    }
+  }
+}
