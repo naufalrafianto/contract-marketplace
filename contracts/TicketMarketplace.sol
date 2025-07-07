@@ -173,6 +173,7 @@ contract TicketMarketplace is
         _tokenIdCounter++;
         uint256 tokenId = _tokenIdCounter;
 
+        // FIXED: Mint ke msg.sender (pembeli), bukan ke organizer
         _safeMint(msg.sender, tokenId);
         _setTokenURI(tokenId, newTokenURI);
 
@@ -182,17 +183,17 @@ contract TicketMarketplace is
         // Update event supply
         eventInfo.currentSupply++;
 
-        // Create ticket record
+        // FIXED: Create ticket record dengan owner yang benar (msg.sender)
         tickets[tokenId] = Ticket({
             tokenId: tokenId,
             eventId: eventId,
-            owner: msg.sender,
+            owner: msg.sender, // FIXED: Pastikan owner adalah pembeli
             isUsed: false,
             purchaseDate: block.timestamp,
             usageDate: 0
         });
 
-        // Add to user tickets
+        // FIXED: Add to user tickets untuk pembeli, bukan organizer
         userTickets[msg.sender].push(tokenId);
 
         // Calculate fees
@@ -256,7 +257,7 @@ contract TicketMarketplace is
 
         Ticket storage ticket = tickets[tokenId];
 
-        // Remove from user tickets array
+        // FIXED: Remove from user tickets array - gunakan ownerOf untuk mendapatkan owner saat ini
         address ticketOwner = ownerOf(tokenId);
         uint256[] storage userTicketList = userTickets[ticketOwner];
         for (uint256 i = 0; i < userTicketList.length; i++) {
@@ -391,6 +392,29 @@ contract TicketMarketplace is
         uint256 tokenId,
         address auth
     ) internal override(ERC721, ERC721Pausable) returns (address) {
+        address from = _ownerOf(tokenId);
+
+        // Jika ini bukan mint (from != address(0)) dan bukan burn (to != address(0))
+        if (from != address(0) && to != address(0) && tokenExists[tokenId]) {
+            // Update ticket owner
+            tickets[tokenId].owner = to;
+
+            // Remove dari array userTickets pemilik lama
+            uint256[] storage fromUserTickets = userTickets[from];
+            for (uint256 i = 0; i < fromUserTickets.length; i++) {
+                if (fromUserTickets[i] == tokenId) {
+                    fromUserTickets[i] = fromUserTickets[
+                        fromUserTickets.length - 1
+                    ];
+                    fromUserTickets.pop();
+                    break;
+                }
+            }
+
+            // Add ke array userTickets pemilik baru
+            userTickets[to].push(tokenId);
+        }
+
         return super._update(to, tokenId, auth);
     }
 

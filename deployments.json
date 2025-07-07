@@ -3,8 +3,8 @@
     "error": "hre.changeNetwork is not a function"
   },
   "cardona": {
-    "address": "0x987A8EB9ca99Cdb8613BFceFEae81c68d158DeBA",
-    "deploymentHash": "0x6dc0ce792a53efef456e72d651f1d266bc88440c4ddba32c02720ad04bc7d644",
+    "address": "0x7C0b3D83F4e7d4333973Cf3A070CC853b6EfE0ca",
+    "deploymentHash": "0x66e2baf0a86956c2bd7dd6d76f7657b358b617be92dce8ae5a3569c26a1350c5",
     "network": "cardona"
   }
 }
